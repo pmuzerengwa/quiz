@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta name="description" content="Quiz ">
+  <meta name="author" content="Priscilla Anesu Muzerengwa">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+   <title>Quiz</title>
+</head>
+
+<body>
+<h1>Capital Cities Quiz</h1>
+<script>
+
+
+	var correct = 0; //initalises the score value
+	
+	var answer1 = prompt("question 1.\n What is the capital city of Zimbabwe");
+	if (answer1.toUpperCase()==="HARARE"){ // converts answer to upper case so that all making it case insensetive
+		correct += 1; // add a 1 to score when ever the anser is correct
+	}
+	
+	var answer1 = prompt("question 2.\n What is the capital city of Namibia");
+	if (answer1.toUpperCase()==="WINDHOEK"){
+		correct += 1;
+	}
+	
+	var answer1 = prompt("question 3.\n What is the capital city of Malawi");
+	if (answer1.toUpperCase()==="LILONGWE"){
+		correct += 1;
+	}
+	
+	var answer1 = prompt("question 4.\n What is the capital city of Mozambique");
+	if (answer1.toUpperCase()==="MAPUTO"){
+		correct += 1;
+	}
+
+
+	correct = (correct/4)*100  // converts the score to percentage
+
+
+	document.write("<b>Your score is " + correct + "%.  </b>");
+	
+//grades the score
+	if( correct >=80 ){ 
+		document.write("<b>Your grade is A - Brilliant work</b>");}
+		else if( correct >=70 ){ 
+			document.write("<b>Your grade is B - Well done</b>"); }
+		else if( correct >=60 ){ 
+			document.write("<b>Your grade is C - Pass</b>"); }
+		else if( correct >=50 ){ 
+			document.write("<b>Your grade is D - Missed a pass</b>"); }
+		else { document.write("<b>Sorry your grade is Fail.</b>"); }
+	
+</script>
+</body>
+</html>
